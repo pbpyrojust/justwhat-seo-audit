@@ -34,6 +34,10 @@ For exhaustive work, use `audit` and tune scope with `--max-pages`, `--top-level
 - Cloudflare/WAF challenge detection with automatic backoff and retry, plus `robots.txt`-aware crawling
 - HTTP Basic Auth and form-login support for staging and password-protected sites
 
+## What's new in 1.6.1
+
+- **Fix:** The HTML-to-PDF step opened `file://reports/...` when `--run-dir` was a relative path (an invalid address, so the PDF failed after the HTML was written); it now uses a proper file URL from the absolute path.
+
 ## What's new in 1.6.0
 
 - **AI crawler access** in the agentic readiness audit: per page, which AI search/retrieval bots and AI training bots robots.txt allows (RFC 9309 matching). New columns in `seo-agentic.csv`: `ai_crawler_access_score`, `ai_search_bots_blocked`, `ai_training_bots_blocked`, `robots_txt_status`; a new `ai_search_crawlers_blocked` finding. Blocking training bots is reported but not penalized.

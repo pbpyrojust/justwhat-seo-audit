@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { pathToFileURL } from 'node:url';
 import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from 'playwright';
@@ -103,7 +104,7 @@ const pdfPath = path.join(runDir, 'seo-dashboard.pdf');
 fs.writeFileSync(htmlPath, html, 'utf8');
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage();
-await page.goto('file://' + htmlPath, { waitUntil: 'load' });
+await page.goto(pathToFileURL(path.resolve(htmlPath)).href, { waitUntil: 'load' });
 await page.pdf({ path: pdfPath, format: 'A4', printBackground: true, margin: { top: '12mm', right: '10mm', bottom: '12mm', left: '10mm' } });
 await browser.close();
 console.log(`Wrote: ${htmlPath}`);
