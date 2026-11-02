@@ -19,10 +19,10 @@ function run(script, args) {
 }
 
 function printHelp() {
-  console.log(`universal-seo-audit
+  console.log(`justwhat-seo-audit
 
 Usage:
-  universal-seo-audit <command> [options]
+  justwhat-seo-audit <command> [options]
 
 Commands:
   audit                 Full technical SEO audit workflow
@@ -38,20 +38,20 @@ Commands:
   version               Show package version
 
 Examples:
-  universal-seo-audit quick --site https://www.example.com
-  universal-seo-audit audit --site https://www.example.com
-  universal-seo-audit audit --site https://www.example.com --lighthouse
-  universal-seo-audit audit --site https://www.example.com --top-level
-  universal-seo-audit lite --site https://www.example.com --crawl
-  universal-seo-audit audit --site https://www.example.com --slow --respect-robots --cloudflare-aware
-  universal-seo-audit audit --site https://www.example.com --brand-config ./branding.json
-  universal-seo-audit build-urls --site https://www.example.com --out ./reports/urls.txt
-  universal-seo-audit report --run-dir ./reports/<run-id> --site https://www.example.com
-  universal-seo-audit tickets --run-dir ./reports/<run-id>
-  universal-seo-audit visual-report --run-dir ./reports/<run-id> --site https://www.example.com --brand-config ./branding.json
-  universal-seo-audit compare --before ./reports/run-a --after ./reports/run-b
-  universal-seo-audit sitemap-xml-to-urls --input ./saved-sitemap.xml --out ./reports/urls.txt
-  universal-seo-audit audit --site https://staging.example.com --auth-config ./auth.local.json
+  justwhat-seo-audit quick --site https://www.example.com
+  justwhat-seo-audit audit --site https://www.example.com
+  justwhat-seo-audit audit --site https://www.example.com --lighthouse
+  justwhat-seo-audit audit --site https://www.example.com --top-level
+  justwhat-seo-audit lite --site https://www.example.com --crawl
+  justwhat-seo-audit audit --site https://www.example.com --slow --respect-robots --cloudflare-aware
+  justwhat-seo-audit audit --site https://www.example.com --brand-config ./branding.json
+  justwhat-seo-audit build-urls --site https://www.example.com --out ./reports/urls.txt
+  justwhat-seo-audit report --run-dir ./reports/<run-id> --site https://www.example.com
+  justwhat-seo-audit tickets --run-dir ./reports/<run-id>
+  justwhat-seo-audit visual-report --run-dir ./reports/<run-id> --site https://www.example.com --brand-config ./branding.json
+  justwhat-seo-audit compare --before ./reports/run-a --after ./reports/run-b
+  justwhat-seo-audit sitemap-xml-to-urls --input ./saved-sitemap.xml --out ./reports/urls.txt
+  justwhat-seo-audit audit --site https://staging.example.com --auth-config ./auth.local.json
 
 Primary outputs:
   seo-pages.csv                 Per-page SEO metadata and status data

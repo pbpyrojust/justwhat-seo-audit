@@ -1,5 +1,5 @@
 {
-  "name": "@pbpyrojust/universal-seo-audit",
+  "name": "@pbpyrojust/justwhat-seo-audit",
   "version": "1.6.1",
   "private": false,
   "type": "module",
@@ -15,7 +15,7 @@
     "tickets": "node scripts/generate-seo-tickets.mjs",
     "compare": "node scripts/compare-seo-runs.mjs",
     "sitemap:xml-to-urls": "node scripts/convert-sitemap-xml-to-urls.mjs",
-    "cli": "node bin/universal-seo-audit.mjs",
+    "cli": "node bin/justwhat-seo-audit.mjs",
     "pack:check": "npm pack --dry-run",
     "release:tag": "node -e \"const p=require('./package.json'); console.log('git tag v'+p.version+' && git push origin v'+p.version)\""
   },
@@ -27,14 +27,14 @@
   },
   "description": "Technical SEO, asset integrity, script inventory, CSP readiness, Lighthouse, and browser-agent readiness audit CLI with branded reports for public, staging, and protected sites.",
   "author": "Justin Adams (https://justwhat.net)",
-  "homepage": "https://github.com/pbpyrojust/universal-seo-audit#readme",
+  "homepage": "https://github.com/pbpyrojust/justwhat-seo-audit#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pbpyrojust/universal-seo-audit.git"
+    "url": "git+https://github.com/pbpyrojust/justwhat-seo-audit.git"
   },
   "bugs": {
-    "url": "https://github.com/pbpyrojust/universal-seo-audit/issues"
+    "url": "https://github.com/pbpyrojust/justwhat-seo-audit/issues"
   },
   "keywords": [
     "seo",
@@ -60,9 +60,10 @@
     "node": ">=20"
   },
   "bin": {
-    "universal-seo-audit": "bin/universal-seo-audit.mjs",
-    "useoaudit": "bin/universal-seo-audit.mjs",
-    "seoaudit": "bin/universal-seo-audit.mjs"
+    "justwhat-seo-audit": "bin/justwhat-seo-audit.mjs",
+    "useoaudit": "bin/justwhat-seo-audit.mjs",
+    "seoaudit": "bin/justwhat-seo-audit.mjs",
+    "universal-seo-audit": "bin/justwhat-seo-audit.mjs"
   },
   "files": [
     "bin/",

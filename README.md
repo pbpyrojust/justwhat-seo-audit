@@ -1,7 +1,9 @@
 # JustWhat SEO Audit
 
-**Package:** `@pbpyrojust/universal-seo-audit`
-**CLI commands:** `universal-seo-audit`, `seoaudit`, `useoaudit`
+> Formerly `@pbpyrojust/universal-seo-audit`. That package is deprecated in favour of this one; the old `universal-seo-audit` command still works here too.
+
+**Package:** `@pbpyrojust/justwhat-seo-audit`
+**CLI commands:** `justwhat-seo-audit`, `seoaudit`, `useoaudit`
 **Version:** 1.6.0
 
 A technical SEO, asset integrity, script inventory, and security audit CLI with visual HTML dashboard, branded PDF reporting, Lighthouse performance scoring, and agentic readiness analysis. Built for development, staging, protected, and noindex sites.
@@ -13,7 +15,7 @@ Full-site SEO audits can take a long time. This tool opens pages in Chromium, ch
 For a quick first pass, use `quick` or `--quick`. It scans only top-level URLs by default, disables Lighthouse, applies lite crawl limits, and caps the run at 25 pages unless you override `--max-pages`.
 
 ```bash
-npm exec --package @pbpyrojust/universal-seo-audit -- universal-seo-audit quick --site https://www.example.com
+npm exec --package @pbpyrojust/justwhat-seo-audit -- justwhat-seo-audit quick --site https://www.example.com
 ```
 
 For exhaustive work, use `audit` and tune scope with `--max-pages`, `--top-level`, `--max-path-depth`, `--crawl`, `--max-depth`, `--slow`, `--respect-robots`, and `--cloudflare-aware`.
@@ -77,14 +79,14 @@ npx playwright install --with-deps chromium
 ## Install from npm
 
 ```bash
-npm install -g @pbpyrojust/universal-seo-audit
+npm install -g @pbpyrojust/justwhat-seo-audit
 npx playwright install --with-deps chromium
 ```
 
 Or run it without a global install:
 
 ```bash
-npm exec --package @pbpyrojust/universal-seo-audit -- universal-seo-audit quick --site https://www.example.com
+npm exec --package @pbpyrojust/justwhat-seo-audit -- justwhat-seo-audit quick --site https://www.example.com
 ```
 
 ## Use in project workflows
@@ -92,7 +94,7 @@ npm exec --package @pbpyrojust/universal-seo-audit -- universal-seo-audit quick 
 Install it as a project dev dependency when you want SEO audits to run from npm scripts, CI jobs, preview deployments, or release checks:
 
 ```bash
-npm install --save-dev @pbpyrojust/universal-seo-audit
+npm install --save-dev @pbpyrojust/justwhat-seo-audit
 npx playwright install chromium
 ```
 
@@ -101,9 +103,9 @@ Add scripts to your project's `package.json`:
 ```json
 {
   "scripts": {
-    "seo:quick": "universal-seo-audit quick --site https://www.example.com",
-    "seo:full": "universal-seo-audit audit --site https://www.example.com --respect-robots --max-pages 100",
-    "seo:lighthouse": "universal-seo-audit audit --site https://www.example.com --lighthouse --max-pages 10"
+    "seo:quick": "justwhat-seo-audit quick --site https://www.example.com",
+    "seo:full": "justwhat-seo-audit audit --site https://www.example.com --respect-robots --max-pages 100",
+    "seo:lighthouse": "justwhat-seo-audit audit --site https://www.example.com --lighthouse --max-pages 10"
   }
 }
 ```
@@ -143,7 +145,7 @@ jobs:
 Run a fast top-level pass:
 
 ```bash
-universal-seo-audit quick --site https://www.example.com
+justwhat-seo-audit quick --site https://www.example.com
 ```
 
 Run a full audit:
@@ -167,7 +169,7 @@ pnpm seo-audit --site https://www.example.com --lighthouse
 Or use the installed CLI:
 
 ```bash
-universal-seo-audit audit --site https://www.example.com
+justwhat-seo-audit audit --site https://www.example.com
 seoaudit audit --site https://www.example.com
 ```
 
@@ -228,13 +230,13 @@ Credentials can also be set via environment variables instead of flags: `USEO_HT
 
 ```bash
 # Fast package-style first pass: top-level pages only, no Lighthouse
-universal-seo-audit quick --site https://www.example.com
+justwhat-seo-audit quick --site https://www.example.com
 
 # Full sitemap-based scan with Lighthouse
 node scripts/run-seo-audit.mjs --site https://www.example.com --lighthouse
 
 # Top-level pages only, but keep the full reporting workflow
-universal-seo-audit audit --site https://www.example.com --top-level
+justwhat-seo-audit audit --site https://www.example.com --top-level
 
 # Limit scan to 50 pages
 node scripts/run-seo-audit.mjs --site https://www.example.com --max-pages 50

@@ -9,8 +9,8 @@ This repo is configured so you can:
 
 ## Package details
 
-- **npm package:** `@pbpyrojust/universal-seo-audit`
-- **CLI commands:** `universal-seo-audit`, `seoaudit`, `useoaudit`
+- **npm package:** `@pbpyrojust/justwhat-seo-audit`
+- **CLI commands:** `justwhat-seo-audit`, `seoaudit`, `useoaudit`
 - **Current version:** see `package.json`
 
 ## Before you publish
@@ -20,7 +20,7 @@ This repo is configured so you can:
 Your repository should be:
 
 ```text
-https://github.com/pbpyrojust/universal-seo-audit
+https://github.com/pbpyrojust/justwhat-seo-audit
 ```
 
 ### 2. Verify package metadata
@@ -109,7 +109,7 @@ On npm package settings:
 3. add a **Trusted Publisher**
 4. choose **GitHub Actions**
 5. connect the repository:
-   - `pbpyrojust/universal-seo-audit`
+   - `pbpyrojust/justwhat-seo-audit`
 
 After that, future publishes can happen from GitHub Actions on version tags.
 
@@ -153,7 +153,7 @@ https://npm.pkg.github.com
 
 GitHub Packages has a few extra rules:
 
-- npm packages published there must be scoped, such as `@pbpyrojust/universal-seo-audit`
+- npm packages published there must be scoped, such as `@pbpyrojust/justwhat-seo-audit`
 - local publishing requires a classic GitHub personal access token
 - GitHub Actions can publish with `GITHUB_TOKEN` when the package is associated with this repository
 - first-published GitHub Packages may default to private visibility, so confirm the package visibility after the first publish if you want it public
@@ -171,21 +171,21 @@ git push origin "ghpkg-v${VERSION}"
 ### From npmjs.org
 
 ```bash
-npm install -g @pbpyrojust/universal-seo-audit
+npm install -g @pbpyrojust/justwhat-seo-audit
 npx playwright install --with-deps chromium
-universal-seo-audit quick --site https://www.example.com
-universal-seo-audit audit --site https://www.example.com
+justwhat-seo-audit quick --site https://www.example.com
+justwhat-seo-audit audit --site https://www.example.com
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/pbpyrojust/universal-seo-audit.git
-cd universal-seo-audit
+git clone https://github.com/pbpyrojust/justwhat-seo-audit.git
+cd justwhat-seo-audit
 npm install
 npx playwright install --with-deps chromium
-node bin/universal-seo-audit.mjs quick --site https://www.example.com
-node bin/universal-seo-audit.mjs audit --site https://www.example.com
+node bin/justwhat-seo-audit.mjs quick --site https://www.example.com
+node bin/justwhat-seo-audit.mjs audit --site https://www.example.com
 ```
 
 ## Recommended first sequence
