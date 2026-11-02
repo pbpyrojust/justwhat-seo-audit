@@ -50,12 +50,12 @@ const runDir = args['run-dir'];
 if (!runDir) { console.error('ERROR: Missing --run-dir'); process.exit(1); }
 const site = args.site || 'the site';
 let branding = {
-  companyName: 'Universal SEO Audit',
+  companyName: 'JustWhat SEO Audit',
   primaryColor: '#2563eb',
   secondaryColor: '#111827',
   accentColor: '#22c55e',
   reportTitle: 'Technical SEO & Site Health Audit',
-  author: 'Universal SEO Audit',
+  author: 'JustWhat SEO Audit',
   footerText: 'Confidential report'
 };
 if (args['brand-config']) {

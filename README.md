@@ -1,4 +1,4 @@
-# Universal SEO Audit
+# JustWhat SEO Audit
 
 **Package:** `@pbpyrojust/universal-seo-audit`
 **CLI commands:** `universal-seo-audit`, `seoaudit`, `useoaudit`
@@ -52,7 +52,7 @@ This scanner is the free, open-source engine behind the [SEO checks in Vinny](ht
 - [Scheduled full-site scans](https://vinny.justwhat.net/features/) with history, alerts, fix tickets and [AI fix suggestions](https://vinny.justwhat.net/features/) for titles, descriptions and schema.
 - [AI Visibility](https://vinny.justwhat.net/features/#ai): how ChatGPT, Perplexity, Gemini and Google AI Overviews talk about your brand, as an [add-on](https://vinny.justwhat.net/pricing/#ai-visibility).
 
-Vinny is [free for one site](https://vinny.justwhat.net/pricing/). For WordPress, the [Universal SEO Audit plugin](https://wordpress.justwhat.net/#plugins-heading) is coming soon.
+Vinny is [free for one site](https://vinny.justwhat.net/pricing/). For WordPress, the [JustWhat SEO Audit plugin](https://wordpress.justwhat.net/#plugins-heading) is coming soon.
 
 ## Requirements
 

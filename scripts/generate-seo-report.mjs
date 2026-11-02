@@ -83,7 +83,7 @@ out.push(`Pages scanned: ${meta.pagesScanned || pages.length}`);
 out.push(`Issues found: ${meta.issuesFound || issues.length}`);
 out.push("");
 out.push("## What this tool reports");
-out.push("Universal SEO Audit is intended for technical SEO validation on development, staging, protected, and noindex sites. It renders pages in a real browser and reports technical issues, metadata gaps, crawl findings, schema/social coverage, Lighthouse/Core Web Vitals, agentic-readiness signals, and ticket-ready remediation items.");
+out.push("JustWhat SEO Audit is intended for technical SEO validation on development, staging, protected, and noindex sites. It renders pages in a real browser and reports technical issues, metadata gaps, crawl findings, schema/social coverage, Lighthouse/Core Web Vitals, agentic-readiness signals, and ticket-ready remediation items.");
 out.push("");
 out.push("## Highest-priority findings");
 out.push(`- Broken/error pages: ${count("http_4xx") + count("http_5xx")}`);

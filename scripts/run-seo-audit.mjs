@@ -572,7 +572,7 @@ fs.mkdirSync(outDir, { recursive: true });
 const auditStartTime = Date.now();
 console.log('');
 console.log(`  ${rainbow('╔══════════════════════════════════════════════════════════╗')}`);
-console.log(`  ${rainbow('║')}  ${c.bold}${c.brightCyan}⚡ Universal SEO Audit${c.reset}                                ${rainbow('║')}`);
+console.log(`  ${rainbow('║')}  ${c.bold}${c.brightCyan}⚡ JustWhat SEO Audit${c.reset}                                 ${rainbow('║')}`);
 console.log(`  ${rainbow('║')}  ${c.dim}Technical SEO · Assets · Scripts · CSP · Agentic${c.reset}       ${rainbow('║')}`);
 console.log(`  ${rainbow('╚══════════════════════════════════════════════════════════╝')}`);
 console.log('');
